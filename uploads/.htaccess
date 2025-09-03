@@ -1,0 +1,14 @@
+# Matikan directory listing
+Options -Indexes
+
+# Cegah eksekusi script PHP, CGI, dll di dalam folder ini
+<FilesMatch "\.(php|php5|php7|phtml|pl|cgi|asp|aspx|js|html|htm)$">
+    Order Allow,Deny
+    Deny from all
+</FilesMatch>
+
+# Hanya izinkan gambar & file tertentu diakses langsung
+<FilesMatch "\.(jpg|jpeg|png|gif|webp|svg|pdf)$">
+    Order Allow,Deny
+    Allow from all
+</FilesMatch>
