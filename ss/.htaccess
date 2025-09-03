@@ -1,8 +1,1 @@
-# Matikan directory listing
-Options -Indexes
 
-# Hanya izinkan file berikut
-<FilesMatch "\.(css|js|jpg|jpeg|png|gif|svg|woff|woff2|ttf|eot)$">
-    Order Allow,Deny
-    Allow from all
-</FilesMatch>
